@@ -1,0 +1,53 @@
+body {
+  background-color: #fcb0b3;
+}
+.container {
+  background-color: #fcecc9;
+  width: 95%;
+  max-width: 1000px; /* supaya ukuran container tidak melebihi 1000px*/
+  margin: 0 auto; /* supaya container tetap berada di tengah browser */
+  border-radius: 10px;
+}
+nav li {
+  display: inline-block; /* untuk menghilangkan bulat pada list dan membuat posisi list itu melebar ke kanan */
+}
+nav ul {
+  display: flex; /* untuk mengatur jarak diantara list*/
+  justify-content: space-between; /* memberi nama yaspokya rapat ke sebelah kiri dan menu Login rapat ke sebelah kanan */
+  padding: 10px; /* secara default tag ul memiliki padding di sebelah kanan*/
+  font-size: 1.2rem; /* saik font untuk website responsive */
+}
+.namelogo {
+  font-family: "Almendra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav a {
+  color: #f93943;
+  text-decoration: none;
+}
+nav .hover:hover {
+  text-decoration: underline;
+}
+.button {
+  border: 1px solid #f93943;
+  padding: 5px 10px; /* memberikan padding 5px vertical & 10px horizontal */
+  border-radius: 10px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #fcb0b3; /* Bila kita arahkan cursor ke atas button maka warna background button akn mnjadi warna whitesmoke*/
+  color: #fcecc9;
+}
+
+@media (max-width: 600px) /* kod css ini akn berjalan ketika saiz browser adalah 600px atau lebih kurang darinya*/ {
+  nav ul {
+    display: flex; /* memberi display flex kpd property nav ul supaya ia mnjd flexible */
+    flex-direction: column; /* ketika saiz browser adalah 600px atau lebih kurang darinya maka ul(unordered list) akan menurun ke bawah supaya senang dilihat untuk pengguna fon*/
+    align-items: center;
+  }
+  nav li:last-child /* memilih property yg akhir skli dalam parent untuk mngubahnya */ {
+    margin: 10px 0;
+  }
+}
