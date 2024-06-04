@@ -1,3 +1,3 @@
 # HTML Template
 
-## Navbar , Footer , Portfolio
+## Navbar , Footer , Portfolio (Responsive Web Design)
